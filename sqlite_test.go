@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/mattn/go-sqlite3"
+	"github.com/labulakalia/go-sqlcipher"
 	"gorm.io/gorm"
 )
 

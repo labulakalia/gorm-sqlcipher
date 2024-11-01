@@ -1,4 +1,4 @@
-# GORM Sqlite Driver
+# GORM Sqlcipher Driver
 
 ![CI](https://github.com/go-gorm/sqlite/workflows/CI/badge.svg)
 
@@ -6,25 +6,12 @@
 
 ```go
 import (
-  "gorm.io/driver/sqlite"
+  "github.com/labulakalia/gorm-sqlcipher"
   "gorm.io/gorm"
 )
 
-// github.com/mattn/go-sqlite3
+// github.com/labulakalia/go-sqlcipher
 db, err := gorm.Open(sqlite.Open("gorm.db"), &gorm.Config{})
 ```
 
 Checkout [https://gorm.io](https://gorm.io) for details.
-
-### Pure go Sqlite Driver
-
-checkout [https://github.com/glebarez/sqlite](https://github.com/glebarez/sqlite) for details
-
-```go
-import (
-  "github.com/glebarez/sqlite"
-  "gorm.io/gorm"
-)
-
-db, err := gorm.Open(sqlite.Open("gorm.db"), &gorm.Config{})
-```
